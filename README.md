@@ -47,12 +47,26 @@ Developed by:KARJHANI PRIYANKA S B
 RegisterNumber: 212224040150
 */
 
+module exe05(din,a,b,c);
+
+input [0:7] din;
+
+output a,b,c;
+
+assign a=(din[4]| din[5]| din[6]| din[7]);
+
+assign b=(din[2]| din[3]| din[6]| din[7]);
+
+assign c=(din[1]| din[3]| din[5]| din[7]);
+
+endmodule
+
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling:
 ![image](https://github.com/user-attachments/assets/bec13b6a-4cc5-4381-938d-ee745c35106c)
 
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling
-![image](https://github.com/user-attachments/assets/f88ecc66-4c13-45af-8776-c4a30987c3ed)
+![Uploading image.png…]()
 
 
 **RESULTS:
